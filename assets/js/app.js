@@ -6,6 +6,9 @@ require('../css/responsive.css');
 require('../js/typed.js');
 
 require('../images/favicon.png');
+require('../images/favicon-16x16.png');
+require('../images/favicon-32x32.png');
+require('../images/favicon-96x96.png');
 require('../images/Aberdeen_station.jpg');
 require('../images/logo.png');
 
