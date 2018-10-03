@@ -10,5 +10,6 @@ module.exports = function(stationCode) {
     return `Sorry, '${stationCode}' is not known as a British Rail station code`;
   }
 
-  return `'${stationCode}' is the British Rail station code for '${name}'`;
+  return `'${stationCode}' is the British Rail station code for 
+  '${name}'`;
 };
