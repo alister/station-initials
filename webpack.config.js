@@ -1,4 +1,6 @@
 var Encore = require('@symfony/webpack-encore');
+// See: https://symfony.com/doc/current/frontend.html
+// https://symfony.com/doc/current/frontend/encore/faq.html
 
 Encore
     // directory where compiled assets will be stored
@@ -18,11 +20,15 @@ Encore
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
+    // https://symfony.com/doc/current/frontend/encore/shared-entry.html
+    // .createSharedEntry('app', 'assets/js/app.js')
     //.addEntry('homepage', './assets/js/homepage.js')
     //.addEntry('blog', './assets/js/blog.js')
     //.addEntry('store', './assets/js/store.js')
     //.addEntry('page2', './assets/js/page2.js')
     // .addStyleEntry('some_page', './assets/css/some_page.css')
+
+    // Using a CDN? - https://symfony.com/doc/current/frontend/encore/cdn.html
 
     .cleanupOutputBeforeBuild()
     .enableSourceMaps(!Encore.isProduction())
