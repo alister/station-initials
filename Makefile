@@ -24,3 +24,23 @@ watch:
 	docker run -it --rm --name yarn -v "$(PWD)":/usr/src/app -w /usr/src/app node:8-alpine yarn encore dev --watch
 prod:
 	docker run -it --rm --name yarn -v "$(PWD)":/usr/src/app -w /usr/src/app node:8-alpine yarn encore production
+
+
+# Run install on the new ansible-test server, on local Vagrant
+deploy-vagrant:
+	bundle exec cap vagrant deploy
+
+deploy:
+	bundle exec cap prod deploy
+deploy-trace:
+	bundle exec cap prod deploy --trace
+deploy-check:
+	bundle exec cap prod deploy:check
+
+lint-yaml:
+	#find app src -name '*.yml*'                         | xargs -n 50 bin/console lint:yaml
+	bin/console lint:yaml app ; bin/console lint:yaml src
+	#find src -maxdepth 7 -name '*.yml*' | grep -v vendor| xargs -n1 bin/console lint:yaml
+
+lint-twig:
+	find app src -name '*twig' | xargs bin/console lint:twig
