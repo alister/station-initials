@@ -13,6 +13,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 /**
  * @Route("/station")
+ * @Route("/")
  */
 class InitialNameForStation extends AbstractController
 {
