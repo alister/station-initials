@@ -1,20 +1,16 @@
 // assets/js/app.js
-
-// loads the jquery package from node_modules
-//#var $ = require('jquery');
-
 require('../css/app.css');
-var StationCodes = require('./stationCodes');
-
-// ... the rest of your JavaScript...
-
-tryStationCode = function(code) {
-};
+var StationCodes = require('./stationCodeLookup');
 
 stationCodeHandler = function() {
   const dest = document.getElementById('stationCodeDisplay');
   const error = document.getElementById('stationCodeError');
-  dest.innerText = this.value;
+
+  if (this.value === undefined || this.value === null) {
+    dest.innerText = "nothing yet";
+  } else {
+    dest.innerText = this.value;
+  }
 
   stationCodeResult.innerText = '-';
   if (this.value.length > 3) {
