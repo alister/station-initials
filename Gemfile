@@ -12,7 +12,7 @@ group :deployment do
   gem 'rollbar', '~> 1.3.2'
   gem 'capistrano-copy-files'
   # https://github.com/capistrano/bundler
-  gem 'capistrano-bundler', '~> 1.1.2'
+  gem 'capistrano-bundler', '~> 1.5.0'
 
   gem "airbrussh", :require => false
 
