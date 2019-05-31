@@ -28,6 +28,7 @@ Encore
     //.addEntry('store', './assets/js/store.js')
     //.addEntry('page2', './assets/js/page2.js')
     // .addStyleEntry('some_page', './assets/css/some_page.css')
+    .enableSingleRuntimeChunk()
 
     // Using a CDN? - https://symfony.com/doc/current/frontend/encore/cdn.html
 
