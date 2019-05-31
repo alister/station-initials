@@ -39,8 +39,13 @@ deploy-check:
 
 lint-yaml:
 	#find app src -name '*.yml*'                         | xargs -n 50 bin/console lint:yaml
-	bin/console lint:yaml app ; bin/console lint:yaml src
+	bin/console lint:yaml config src ; bin/console lint:yaml src
 	#find src -maxdepth 7 -name '*.yml*' | grep -v vendor| xargs -n1 bin/console lint:yaml
 
 lint-twig:
-	find app src -name '*twig' | xargs bin/console lint:twig
+	find templates src -name '*twig' | xargs bin/console lint:twig
+
+lint: lint-twig lint-yaml
+
+clean:
+	rm -rf var/cache/dev
