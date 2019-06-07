@@ -1,6 +1,8 @@
 
 .PHONY: assets watch prod
 
+all: clean lint assets
+
 install-docker-node:
 	docker pull "node:8-alpine"
 install-yarn:
