@@ -1,4 +1,6 @@
 {
+    "name": "alister/station-initials",
+    "description": "Initials to 3-letter code stations lookup, https://station-initials.contractavailability.com/",
     "type": "project",
     "license": "proprietary",
     "require": {
