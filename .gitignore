@@ -1,6 +1,7 @@
 # Capistrano
 deployment/
 log/
+REVISION
 
 ###> symfony/framework-bundle ###
 /.env

@@ -1,13 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Alister
- * Date: 03/10/2018
- * Time: 12:06
- */
+declare(strict_types=1);
 
 namespace App\Controller;
 
+use App\Revisions;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -17,8 +13,11 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class InitialNameForStation extends AbstractController
 {
-    public function __invoke()
+    public function __invoke(Revisions $revisions)
     {
-        return $this->render('index.html.twig', []);
+        return $this->render('index.html.twig', [
+            'revision_time' => $revisions->getRevisionFileTime(),
+            'revision_sha' => $revisions->getCurrent(),
+        ]);
     }
 }

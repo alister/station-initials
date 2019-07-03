@@ -221,7 +221,8 @@
 
     </div>
 
-    <p>&copy; Copyrights Alister Bulman for Contractor Availability 2018. All rights reserved.</p>
+    <p>&copy; Copyright, Alister Bulman for Contractor Availability
+      {{- revision_time == 0 ? "" : revision_time|date(" Y") }}. All rights reserved.</p>
 
     <div class="credits">
       Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
@@ -245,3 +246,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
+<!-- revision: {{ revision_sha }} -->
