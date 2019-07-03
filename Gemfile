@@ -9,7 +9,7 @@ group :deployment do
 
   gem 'cap-deploy-tagger'
   gem 'capistrano-deploytags', '~> 1.0.0', require: false
-  gem 'rollbar', '~> 1.3.2'
+  gem 'rollbar', '~> 2.20.2'
   gem 'capistrano-copy-files'
   # https://github.com/capistrano/bundler
   gem 'capistrano-bundler', '~> 1.1.2'
