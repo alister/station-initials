@@ -25,7 +25,7 @@ GEM
       capistrano (>= 3.0.0.pre)
     capistrano-copy-files (0.0.1)
       capistrano (>= 3.0.0)
-    capistrano-deploytags (1.0.3)
+    capistrano-deploytags (1.0.6)
       capistrano (>= 3.2.0)
     capistrano-file-permissions (1.0.0)
       capistrano (~> 3.0)
@@ -58,7 +58,7 @@ DEPENDENCIES
   capistrano-bundler (~> 1.1.2)
   capistrano-composer
   capistrano-copy-files
-  capistrano-deploytags (~> 1.0.0)
+  capistrano-deploytags (~> 1.0.6)
   capistrano-file-permissions
   capistrano-symfony (~> 1.0.0)
   capistrano-symfony-doctrine (~> 0.2.11)!
