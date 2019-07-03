@@ -12,23 +12,16 @@ install-yarn:
 	#echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 	#sudo apt-get update && sudo apt-get install yarn
 	$(YARN) add @symfony/webpack-encore --dev
-	
+
 webserver:
 	bin/console server:run nas.abulman.co.uk:8000
 
-#assets:
-#	yarn encore dev
-#watch:
-#	yarn encore dev --watch
-#prod:
-#	yarn encore production
 assets:
 	$(YARN) encore dev
 watch:
 	$(YARN) encore dev --watch
 prod:
 	$(YARN) encore production
-
 
 # Run install on the new ansible-test server, on local Vagrant
 deploy-vagrant:
