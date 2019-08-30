@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 group :deployment do
-  gem 'capistrano', '~> 3.5.0'
+  gem 'capistrano', '~> 3.11.1'
   gem 'capistrano-symfony', '~> 1.0.0' #, git: 'https://github.com/capistrano/symfony'
   gem 'capistrano-composer'
   gem 'capistrano-file-permissions'
