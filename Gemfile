@@ -8,7 +8,7 @@ group :deployment do
   gem 'capistrano-symfony-doctrine', '~> 0.2.11', git: 'https://github.com/glooby/capistrano-symfony-doctrine'
 
   gem 'cap-deploy-tagger'
-  gem 'capistrano-deploytags', '~> 1.0.0', require: false
+  gem 'capistrano-deploytags', '~> 1.0.7', require: false
   gem 'rollbar', '~> 1.3.2'
   gem 'capistrano-copy-files'
   # https://github.com/capistrano/bundler
