@@ -17,9 +17,8 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (>= 1.9.0)
-    capistrano-bundler (1.1.4)
+    capistrano-bundler (1.6.0)
       capistrano (~> 3.1)
-      sshkit (~> 1.2)
     capistrano-composer (0.0.6)
       capistrano (>= 3.0.0.pre)
     capistrano-copy-files (0.0.1)
@@ -33,7 +32,7 @@ GEM
       capistrano-composer (~> 0.0.3)
       capistrano-file-permissions (~> 1.0)
     concurrent-ruby (1.1.5)
-    i18n (1.6.0)
+    i18n (1.7.0)
       concurrent-ruby (~> 1.0)
     multi_json (1.11.2)
     net-scp (2.0.0)
@@ -53,7 +52,7 @@ DEPENDENCIES
   airbrussh (~> 1.0.0)
   cap-deploy-tagger
   capistrano (~> 3.11.2)
-  capistrano-bundler (~> 1.1.2)
+  capistrano-bundler (~> 1.6.0)
   capistrano-composer
   capistrano-copy-files
   capistrano-deploytags (~> 1.0.0)
