@@ -24,8 +24,8 @@ GEM
       capistrano (>= 3.0.0.pre)
     capistrano-copy-files (0.0.1)
       capistrano (>= 3.0.0)
-    capistrano-deploytags (1.0.3)
-      capistrano (>= 3.2.0)
+    capistrano-deploytags (1.0.7)
+      capistrano (>= 3.7.0)
     capistrano-file-permissions (1.0.0)
       capistrano (~> 3.0)
     capistrano-symfony (1.0.0)
@@ -33,7 +33,7 @@ GEM
       capistrano-composer (~> 0.0.3)
       capistrano-file-permissions (~> 1.0)
     concurrent-ruby (1.1.5)
-    i18n (1.6.0)
+    i18n (1.7.0)
       concurrent-ruby (~> 1.0)
     multi_json (1.11.2)
     net-scp (2.0.0)
@@ -56,7 +56,7 @@ DEPENDENCIES
   capistrano-bundler (~> 1.1.2)
   capistrano-composer
   capistrano-copy-files
-  capistrano-deploytags (~> 1.0.0)
+  capistrano-deploytags (~> 1.0.7)
   capistrano-file-permissions
   capistrano-symfony (~> 1.0.0)
   capistrano-symfony-doctrine (~> 0.2.11)!
