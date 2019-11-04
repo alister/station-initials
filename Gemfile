@@ -14,7 +14,7 @@ group :deployment do
   # https://github.com/capistrano/bundler
   gem 'capistrano-bundler', '~> 1.1.2'
 
-  gem "airbrussh", '~> 1.0.0' #, :require => false
+  gem "airbrussh", '~> 1.4.0' #, :require => false
 
   # needs .htaccess..vhost or nginx support
   # https://github.com/capistrano/maintenance

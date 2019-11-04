@@ -9,7 +9,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    airbrussh (1.0.2)
+    airbrussh (1.4.0)
       sshkit (>= 1.6.1, != 1.7.0)
     cap-deploy-tagger (0.2.0)
     capistrano (3.11.2)
@@ -50,7 +50,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  airbrussh (~> 1.0.0)
+  airbrussh (~> 1.4.0)
   cap-deploy-tagger
   capistrano (~> 3.11.2)
   capistrano-bundler (~> 1.1.2)
